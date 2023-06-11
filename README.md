@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/BlakeKaufman/countries_finder_frontendMentor.git
+- Solution URL: https://github.com/BlakeKaufman/countries_finder_frontendMentor
 - Live Site URL: https://blakekaufman.github.io/countries_finder_frontendMentor/
 
 ## My process
