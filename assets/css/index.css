@@ -1,0 +1,81 @@
+:root {
+  --DM_background: hsl(207, 26%, 17%);
+  --DM_elements: hsl(209, 23%, 22%);
+  --DM_boxShadow: hsl(207, 25%, 16%);
+
+  --DM_text: hsl(0, 0%, 100%);
+
+  --LM_text: hsl(200, 15%, 8%);
+  --LM_inputs: hsl(0, 0%, 52%);
+  --LM_background: hsl(0, 0%, 98%);
+  --LM_elements: white;
+  --LM_boxShadow: gainsboro;
+
+  /* - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: var(--LM_text);
+}
+body {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--LM_background);
+  color: var(--LM_text);
+}
+
+/* ------------------------- */
+/* nav */
+/* ------------------------- */
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+
+  box-shadow: 0 3px 5px 0 var(--LM_boxShadow);
+  background-color: var(--LM_elements);
+}
+nav .nav_content {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav_content span:first-child {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav .nav_content .color_scheme_changer {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+nav .nav_content .icon {
+  width: 20px;
+  height: 25px;
+  /* background-color: black; */
+
+  margin-right: 5px;
+}
